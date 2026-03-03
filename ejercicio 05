@@ -1,12 +1,10 @@
 #include <iostream>
 #include <string>
 
-using namespace std;
-
 int main() {
     int nota;
-    cout << "Ingresar la nota (0-100): ";
-    cin >> nota;
+    std::cout << "Ingresar la nota (0-100): ";
+    std::cin >> nota;
 
     char letra;
     if (nota >= 90) letra = 'A';
@@ -15,8 +13,13 @@ int main() {
     else if (nota >= 60) letra = 'D';
     else letra = 'F';
 
-    string estado = (nota >= 60) ? "Aprobado" : "Reprobado";
-    cout << "Letra: " << letra << " | Estado: " << estado << endl;
+    std::string estado;
+    if (nota >= 60)
+        estado = "Aprobado";
+    else
+        estado = "Reprobado";
+
+    std::cout << "Letra: " << letra << " | Estado: " << estado << "\n";
 
     return 0;
 }
