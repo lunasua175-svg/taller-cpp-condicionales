@@ -9,10 +9,10 @@ int main() {
     std::cout << "Ingrese valor de permisos (0-7): ";
     std::cin >> valor;
 
-    std::cout << "Permisos: " << std::endl;
-    if (valor & LEER) std::cout << "- LEER" << std::endl;
-    if (valor & ESCRIBIR) std::cout << "- ESCRIBIR" << std::endl;
-    if (valor & EJECUTAR) std::cout << "- EJECUTAR" << std::endl;
+    std::cout << "Permisos: \n";
+    if (valor & LEER) std::cout << "- LEER\n";
+    if (valor & ESCRIBIR) std::cout << "- ESCRIBIR\n";
+    if (valor & EJECUTAR) std::cout << "- EJECUTAR\n";
 
     return 0;
 }
