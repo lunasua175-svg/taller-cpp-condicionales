@@ -1,0 +1,16 @@
+#include <iostream>
+
+
+int main() {
+    double celsius;
+    std::cout << "Ingrese la temperatura en grados celsius: ";
+    std::cin >> celsius;
+
+    double fahrenheit = (celsius * 9/5) + 32;
+    double kelvin = celsius + 273.15;
+    double rankine = (celsius * 9/5) + 491.67;
+
+    std::cout << "Fahrenheit: " << fahrenheit;
+    std::cout << "Kelvin: " << kelvin;
+    std::cout << "Rankine: " << rankine;
+}
